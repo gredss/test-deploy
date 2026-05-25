@@ -1,2 +1,2 @@
 # test-deploy
-Testing for deployment to OCP-Jenkins using Bob from UI Form
+Automated deployment to OCP-Jenkins using Bob via UI Form
