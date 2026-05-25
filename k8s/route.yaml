@@ -1,0 +1,21 @@
+# Auto-generated Route by Bob
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: new-app
+  namespace: production
+  labels:
+    app: new-app
+    generated-by: bob
+spec:
+  host: new-app-production.apps.itz-gkg33y.infra01-lb.tok04.techzone.ibm.com
+  to:
+    kind: Service
+    name: new-app
+    weight: 100
+  port:
+    targetPort: http
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  wildcardPolicy: None
